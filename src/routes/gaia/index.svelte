@@ -37,7 +37,9 @@
 						<li class="menu-title">Agents</li>
 						{#each list as { id, title, tags, info, imgUrl, width, height }, i}
 							<li>
-								<button class:text-info={current == i} on:click={() => changeHero(i)}>
+								<button
+									class:text-info={current == i}
+									on:click={() => changeHero(i)}>
 									{title}
 								</button>
 							</li>
