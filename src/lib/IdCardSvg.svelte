@@ -10,10 +10,10 @@
 	export let imgUrl: string | null = null
 	export let width: number | null = null
 	export let height: number | null = null
-	let canvas: HTMLCanvasElement | null = null
-	let ctx: CanvasRenderingContext2D | null = null
-	let img: HTMLImageElement | null = null
-	let loading = false
+	let canvas: HTMLCanvasElement | null = null,
+		ctx: CanvasRenderingContext2D | null = null,
+		img: HTMLImageElement | null = null,
+		loading = false
 
 	const drawImageCover = (
 		ctx: CanvasRenderingContext2D,
@@ -21,12 +21,10 @@
 		canvasWidth: number,
 		canvasHeight: number
 	) => {
-		const imgWidth = img.width
-		const imgHeight = img.height
-
-		// Berechne das Seitenverhältnis
-		const imgAspectRatio = imgWidth / imgHeight
-		const canvasAspectRatio = canvasWidth / canvasHeight
+		const imgWidth = img.width,
+			imgHeight = img.height,
+			imgAspectRatio = imgWidth / imgHeight,
+			canvasAspectRatio = canvasWidth / canvasHeight
 
 		let sx: number, sy: number, sWidth: number, sHeight: number
 		if (imgAspectRatio > canvasAspectRatio) {
@@ -48,11 +46,13 @@
 
 	const draw = async () => {
 		if (ctx && canvas) {
-			ctx.clearRect(0, 0, canvas.width, canvas.height)
+			const w = canvas.width,
+				h = canvas.height
+			ctx.clearRect(0, 0, w, h)
 			loading = true
 			img = await loadImage(imgUrl)
 			loading = false
-			drawImageCover(ctx, img, canvas.width, canvas.height)
+			drawImageCover(ctx, img, w, h)
 		}
 	}
 

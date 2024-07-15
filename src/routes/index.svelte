@@ -1,41 +1,35 @@
 <script lang="ts">
+	import './index.scss'
 	import { onMount } from 'svelte'
 	import { _user } from '../lib/db'
 	import nav from '../lib/nav'
 	import { sleep } from '../lib'
 	// import { goto } from '@roxi/routify'
-	let dialog: HTMLElement | null
+	let menu: HTMLElement | null
 
 	onMount(async () => {
 		await sleep(200)
-		dialog.showModal()
+		run()
 	})
+
+	const run = () => {
+		console.log('app run')
+		const listItems = menu.querySelectorAll('a')
+		listItems.forEach((item, index) => {
+			sleep(index * 100).then(() => {
+				item.classList.add('on')
+			})
+		})
+	}
 </script>
 
 <section class="layer nwp center" class_bg-error={!$_user}>
 	<article class="text-center">
-		<header>
-			<nav>
-				<button class="btn btn-ghost" on:click={() => dialog.showModal()}
-					>open modal</button>
-			</nav>
-		</header>
-	</article>
-</section>
-
-<dialog bind:this={dialog} class="modal">
-	<div class="modal-box max-w-xs text-center" class:text-error={!$_user}>
 		<h3 class="text-2xl mb-4 font-bold">Welcome To NWP</h3>
-		<nav class="grid grid-cols-2 gap-2">
+		<nav bind:this={menu} class="grid grid-cols-2 gap-2">
 			{#each nav as { name, href, icon }}
-				<a {href} class="btn">{name}</a>
+				<a {href} class="btn menu-link">{name}</a>
 			{/each}
 		</nav>
-		<div class="modal-action">
-			<form method="dialog" class="grid flex-1">
-				<!-- if there is a button in form, it will close the modal -->
-				<button class="btn btn-ghost btn-block">Close</button>
-			</form>
-		</div>
-	</div>
-</dialog>
+	</article>
+</section>

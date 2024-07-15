@@ -1,0 +1,11 @@
+.menu-link {
+	opacity: 0;
+	transform: translateY(-50px);
+	transition:
+		transform 0.5s ease-out,
+		opacity 0.5s ease-out;
+	&.on {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

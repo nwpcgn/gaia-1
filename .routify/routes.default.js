@@ -17,6 +17,20 @@ export default {
   "children": [
     {
       "meta": {},
+      "id": "_default_dialog_svelte",
+      "name": "dialog",
+      "file": {
+        "path": "src/routes/dialog.svelte",
+        "dir": "src/routes",
+        "base": "dialog.svelte",
+        "ext": ".svelte",
+        "name": "dialog"
+      },
+      "asyncModule": () => import('../src/routes/dialog.svelte'),
+      "children": []
+    },
+    {
+      "meta": {},
       "id": "_default_gaia",
       "name": "gaia",
       "file": {
