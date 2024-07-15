@@ -1,0 +1,58 @@
+{ "frames": {
+   "rr1 0.png": {
+    "frame": { "x": 0, "y": 0, "w": 68, "h": 104 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 68, "h": 104 },
+    "sourceSize": { "w": 68, "h": 104 },
+    "duration": 100
+   },
+   "rr1 1.png": {
+    "frame": { "x": 68, "y": 0, "w": 68, "h": 104 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 68, "h": 104 },
+    "sourceSize": { "w": 68, "h": 104 },
+    "duration": 100
+   },
+   "rr1 2.png": {
+    "frame": { "x": 136, "y": 0, "w": 68, "h": 104 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 68, "h": 104 },
+    "sourceSize": { "w": 68, "h": 104 },
+    "duration": 100
+   },
+   "rr1 3.png": {
+    "frame": { "x": 204, "y": 0, "w": 68, "h": 104 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 68, "h": 104 },
+    "sourceSize": { "w": 68, "h": 104 },
+    "duration": 100
+   },
+   "rr1 4.png": {
+    "frame": { "x": 272, "y": 0, "w": 68, "h": 104 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 68, "h": 104 },
+    "sourceSize": { "w": 68, "h": 104 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3.7-x64",
+  "image": "rr1-sheet.png",
+  "format": "RGBA8888",
+  "size": { "w": 340, "h": 104 },
+  "scale": "1",
+  "frameTags": [
+  ],
+  "layers": [
+   { "name": "Layer", "opacity": 255, "blendMode": "normal" }
+  ],
+  "slices": [
+  ]
+ }
+}
