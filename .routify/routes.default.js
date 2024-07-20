@@ -44,22 +44,6 @@ export default {
       "children": [
         {
           "meta": {
-            "noRoute": true
-          },
-          "id": "_default_gaia__idCard_svelte",
-          "name": "_idCard",
-          "file": {
-            "path": "src/routes/gaia/_idCard.svelte",
-            "dir": "src/routes/gaia",
-            "base": "_idCard.svelte",
-            "ext": ".svelte",
-            "name": "_idCard"
-          },
-          "asyncModule": () => import('../src/routes/gaia/_idCard.svelte'),
-          "children": []
-        },
-        {
-          "meta": {
             "isDefault": true
           },
           "id": "_default_gaia_index_svelte",
@@ -73,6 +57,37 @@ export default {
           },
           "asyncModule": () => import('../src/routes/gaia/index.svelte'),
           "children": []
+        },
+        {
+          "meta": {},
+          "id": "_default_gaia_personal",
+          "name": "personal",
+          "module": false,
+          "file": {
+            "path": "src/routes/gaia/personal",
+            "dir": "src/routes/gaia",
+            "base": "personal",
+            "ext": "",
+            "name": "personal"
+          },
+          "children": [
+            {
+              "meta": {
+                "isDefault": true
+              },
+              "id": "_default_gaia_personal_index_svelte",
+              "name": "index",
+              "file": {
+                "path": "src/routes/gaia/personal/index.svelte",
+                "dir": "src/routes/gaia/personal",
+                "base": "index.svelte",
+                "ext": ".svelte",
+                "name": "index"
+              },
+              "asyncModule": () => import('../src/routes/gaia/personal/index.svelte'),
+              "children": []
+            }
+          ]
         }
       ]
     },
@@ -89,6 +104,127 @@ export default {
       },
       "asyncModule": () => import('../src/routes/game/_module.svelte'),
       "children": [
+        {
+          "meta": {},
+          "id": "_default_game_1",
+          "name": "1",
+          "module": false,
+          "file": {
+            "path": "src/routes/game/1",
+            "dir": "src/routes/game",
+            "base": "1",
+            "ext": "",
+            "name": "1"
+          },
+          "children": [
+            {
+              "meta": {},
+              "id": "_default_game_1_BgImage_svelte",
+              "name": "BgImage",
+              "file": {
+                "path": "src/routes/game/1/BgImage.svelte",
+                "dir": "src/routes/game/1",
+                "base": "BgImage.svelte",
+                "ext": ".svelte",
+                "name": "BgImage"
+              },
+              "asyncModule": () => import('../src/routes/game/1/BgImage.svelte'),
+              "children": []
+            },
+            {
+              "meta": {
+                "isDefault": true
+              },
+              "id": "_default_game_1_index_svelte",
+              "name": "index",
+              "file": {
+                "path": "src/routes/game/1/index.svelte",
+                "dir": "src/routes/game/1",
+                "base": "index.svelte",
+                "ext": ".svelte",
+                "name": "index"
+              },
+              "asyncModule": () => import('../src/routes/game/1/index.svelte'),
+              "children": []
+            }
+          ]
+        },
+        {
+          "meta": {},
+          "id": "_default_game_2",
+          "name": "2",
+          "module": false,
+          "file": {
+            "path": "src/routes/game/2",
+            "dir": "src/routes/game",
+            "base": "2",
+            "ext": "",
+            "name": "2"
+          },
+          "children": [
+            {
+              "meta": {
+                "isDefault": true
+              },
+              "id": "_default_game_2_index_svelte",
+              "name": "index",
+              "file": {
+                "path": "src/routes/game/2/index.svelte",
+                "dir": "src/routes/game/2",
+                "base": "index.svelte",
+                "ext": ".svelte",
+                "name": "index"
+              },
+              "asyncModule": () => import('../src/routes/game/2/index.svelte'),
+              "children": []
+            }
+          ]
+        },
+        {
+          "meta": {},
+          "id": "_default_game_3",
+          "name": "3",
+          "module": false,
+          "file": {
+            "path": "src/routes/game/3",
+            "dir": "src/routes/game",
+            "base": "3",
+            "ext": "",
+            "name": "3"
+          },
+          "children": [
+            {
+              "meta": {},
+              "id": "_default_game_3_BgImage_svelte",
+              "name": "BgImage",
+              "file": {
+                "path": "src/routes/game/3/BgImage.svelte",
+                "dir": "src/routes/game/3",
+                "base": "BgImage.svelte",
+                "ext": ".svelte",
+                "name": "BgImage"
+              },
+              "asyncModule": () => import('../src/routes/game/3/BgImage.svelte'),
+              "children": []
+            },
+            {
+              "meta": {
+                "isDefault": true
+              },
+              "id": "_default_game_3_index_svelte",
+              "name": "index",
+              "file": {
+                "path": "src/routes/game/3/index.svelte",
+                "dir": "src/routes/game/3",
+                "base": "index.svelte",
+                "ext": ".svelte",
+                "name": "index"
+              },
+              "asyncModule": () => import('../src/routes/game/3/index.svelte'),
+              "children": []
+            }
+          ]
+        },
         {
           "meta": {
             "isDefault": true

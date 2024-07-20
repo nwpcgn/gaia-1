@@ -29,6 +29,7 @@
 		"vite": "^5.3.1"
 	},
 	"dependencies": {
-		"@supabase/supabase-js": "^2.44.3"
+		"@supabase/supabase-js": "^2.44.3",
+		"svelte-canvas": "^1.2.0"
 	}
 }
